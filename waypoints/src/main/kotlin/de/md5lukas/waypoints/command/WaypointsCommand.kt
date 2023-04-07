@@ -21,7 +21,7 @@ class WaypointsCommand(private val plugin: WaypointsPlugin) {
 
         commandTree("waypoints") {
             withPermission(WaypointsPermissions.COMMAND_PERMISSION)
-            withAliases("wp")
+            withAliases("wpp")
             playerExecutor { player, _ ->
                 WaypointsGUI(plugin, player, player.uniqueId)
             }
